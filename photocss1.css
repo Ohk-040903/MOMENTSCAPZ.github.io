@@ -1,0 +1,317 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main_box{
+    height: 100vh;
+    width: 100vw;
+    background: url(photo.jpg);
+    background-size: cover;
+    overflow: scroll;
+}
+.main_box::-webkit-scrollbar{
+    display: none;
+}
+#check{
+    display: none;
+}
+.btn_one{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 60px;
+    position: absolute;
+    left: 25px;
+    
+}
+.btn_one:hover{
+    font-size: 35px;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+.sidebar_menu{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(72, 70, 70);
+    /* opacity: 0.2; */
+    box-shadow: 5px 5px 5px rgb(184, 181, 181);
+    position: fixed;
+    left: -500px;
+    z-index: 1;
+}
+.sidebar_menu .logo{
+    height:60px ;
+    width:100%;
+    padding-bottom: 20px;
+    
+    border-bottom: 3px solid rgb(174, 170, 170);
+}
+
+.sidebar_menu .logo a{
+    color: rgb(216, 211, 211);
+    opacity: 1;
+    font-size: 35px;
+    font-weight: 600;
+    
+    position:absolute;
+    left: 50px;
+    top: 25px;
+    text-decoration: none;
+    
+}
+.btn_two {
+    font-size: 25px;
+    font-weight: 500;
+    position: fixed;
+    left: 375px;
+    top:33px;
+    opacity: 0;
+}
+.btn_two:hover{
+    font-size: 35px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.menu{
+    color: rgb(198, 193, 193);
+    padding: 30px;
+    font-size: 30px;
+    /* border: 4px solid white; */
+    
+}
+.menu li{
+    width: 100%;
+    height:50px ;
+    
+    
+    margin-bottom: 5px;
+}
+.menu li:hover{
+    border: 4px solid rgb(200, 196, 196);
+}
+.menu li i{
+    padding: 4px;
+}
+.menu li a{
+    color: rgb(209, 203, 203);
+    text-align: center;
+    text-decoration: none;
+    padding-left: 4px;
+}
+.social_media a i{
+    color: rgb(218, 213, 213);
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 150px;
+    padding-left: 25px;
+    padding-bottom: 30px;
+    /* position: absolute;
+    bottom: 25px; */
+    
+}
+.social_media a i:hover{
+     color: rgb(235, 228, 228);
+     font-size: 30px;
+     font-weight: 600;
+}
+#check:checked~.sidebar_menu{
+    left: 0px;
+    background-color: rgb(72, 70, 70, 0.95);
+}
+#check:checked~.sidebar_menu .btn_two {
+    opacity: 1;
+}
+#main{
+    height: 2000px;
+    width:800px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(42, 44, 42,0);
+    border-radius: 15%;
+    /* align-items: center;
+    justify-content: center; */
+    z-index: 0;
+    /* padding-top: 15px; */
+    /* opacity: 0.2; */
+}
+#signup{
+    margin-top: 10px;
+    margin-left: 1400px;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20%;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+#signup:hover{
+    height: 40px;
+    width: 120px;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255, 1);
+    transition: 0.1s;
+}
+#title{
+    height: 70px;
+    width:80%;
+    color: rgb(217, 213, 213);
+    font-family: fantasy;
+    font-size: 90px;
+    text-align: left;
+    background-color: rgb(42, 44, 42,0);
+    padding-left: 200px;  
+    font-weight: 500;
+    margin-top: 20px;
+}
+#content{
+    height: 550px;
+    width:60%;
+    font-size: 37px;
+    color: rgb(187, 183, 183);
+    background-color: rgb(42, 44, 42,0);
+    margin-top: 55px;
+    padding-left: 200px;
+}
+#content button{
+    height: 40px;
+    width: 125px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20%;
+    background-color: rgb(255, 255, 255, 0.8);
+    position: relative;
+    left: 550px;
+}
+#content button:hover{
+    height: 45px;
+    width: 140px;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255, 1);
+    transition: 0.2s;
+}
+#card_box{
+    background-color: rgb(206, 219, 219, 0);
+    width:100%;
+    height: 2000px; 
+    margin-left: 100px;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: px; */
+}
+#cardholder{
+    background-color: rgb(206, 219, 219, 0.1);
+    width: 1200px;
+    height: 1000px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin-left: 180px;
+}
+#heading p{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(138, 43, 226, 0);
+    color: rgb(217, 213, 213);
+    font-size: 55px;
+    font-weight: 700;
+    padding-left: 420px;
+    padding-top: 15px;
+}
+.card{
+    height: 340px;
+    width: 280px;
+    background-color: rgba(58, 59, 59, 0.8);
+    padding: 15px;
+    border-radius: 10%;
+    border: 2px 2px white;
+    margin: 25px;
+    margin-left: 20px;
+}
+.card:hover{
+    height: 345px;
+    width: 285px;
+    box-shadow: 5px 8px rgba(229, 231, 229, 0.5);
+    transition: 0.1s;
+}
+.card img{
+    height: 225px;
+    width:270px ;
+    border-radius: 10%;
+}
+.card .title{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(217, 213, 213);
+}
+.card .description{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(217, 213, 213);
+}
+#cardholder .card button {
+    height: 35px;
+    width: 100px;
+    border-radius: 20%;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    position: relative;
+    left: 160px;
+    bottom: 0px;
+}
+#cardholder .card button:hover{
+    height: 40px;
+    width: 105px;
+    font-weight: 800;
+    transition: 0.1s;
+}
+
+#button1{
+    height: 100px;
+    width:100%;
+    padding-left: 700px;
+    color: black;
+    margin-top: 35px;
+}
+#button1 #button{
+    height: 40px;
+    width: 150px;
+    border-radius: 20%;
+    color: black;
+    font-weight: 500;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(217, 213, 213);
+    font-size: 15px;
+    text-decoration: none;
+}
+#button1 #button:hover{
+    height: 50px;
+    width: 175px;
+    box-shadow: 5px 5px 4px rgb(85, 84, 84);
+    transition: 0.1s;
+}
+#button1 #button a{
+    color: black;
+    text-decoration: none;
+}
+.social_media1 a i{
+    color: rgb(218, 213, 213);
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 1px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    /* position: absolute;
+    bottom: 25px; */
+    
+}
+.social_media1 a i:hover{
+     color: rgb(235, 228, 228);
+     font-size: 30px;
+     font-weight: 600;
+}
